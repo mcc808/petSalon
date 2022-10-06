@@ -1,6 +1,5 @@
 //object liretal
-let petSaloon = {
-    //attributes
+let petSalon = {
     name:"The Fashion Pet",
     phone: "123-123-123",
     address:{
@@ -10,39 +9,36 @@ let petSaloon = {
         number: "1327",
         zip:"22141"
     }
-
 }
 
-let students = [
-    
+let pets = [
     {
-        Name:"Myles",
-        Age: 98,
-        Grade: "A"    
+        Name:"Star",
+        Age: 1,
+        Gender: "Female",  
+        Service: "Grooming"  
     },
     {
-        Name:"Toung",
-        Age: 99,
-        Grade: "A"    
+        Name:"Biscuit",
+        Age: 2,
+        Gender: "Male",   
+        Servce: "Bath" 
     },
     {
-        Name:"Miguel",
-        Age: 97,
-        Grade: "F"    
+        Name:"Rocky",
+        Age: 3,
+        Gender: "Male",
+        Service: "Haircut"    
     }
+] 
 
-]; //this is an array of students
+alert("We have " + pets.length + " registered pets!");
 
-//FOR LOOP: start point; stopping condition; increment
-//lenght return the number of elements in the array
-for(let i=0; i<students.length; i++){
-    console.log(students[i].age);
+//console.log("We have " + pets.length + " registered pets");
+
+for(let i=0; i<pets.length; i++){
+    console.log(pets[i].Name);
 }
-console.log("We have " + students.length + "students");
 
-//brute force
-//console.log(students[i]);
-//console.log(students[i]);
-//console.log(students[i]);
-//console.log(students[i]);
+
 
