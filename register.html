@@ -60,25 +60,40 @@
                 <label>Service:</label>
                 <select class="form-select" id="selService">
                     <option value=""disabled selected>---Select an option---</option>
-                    <option value="grooming">Grooming</option>
-                    <option value="vaccine">Vaccine</option>
-                    <option value="clipping">Clipping</option>
-                    <option value="bath">Bath</option>
+                    <option value="Grooming">Grooming</option>
+                    <option value="Vaccine">Vaccine</option>
+                    <option value="Clipping">Clipping</option>
+                    <option value="Bath">Bath</option>
                 </select>
             </div>
 
             <button class="btn btn-dark" onclick="register();">Register</button>
         </div>
-        <!--pets cards/table tables-->
+        <!--pets cards-->
         <div id="pets">
-        <!-- tabl tables-->
+        
         </div>
-        <table>
-            <thread>
+        <!-- tabl tables-->
+        <table id="petsTable" class="table table-striped">
+            <thead>
                 <!-- add the headers-->
-            </thread>
-            <tbody id="petsTable">
+                <tr> 
+                    <th scope="col">Name</th>
+                    <th scope="col">Age</th>
+                    <th scope="col">Gender</th>
+                    <th scope="col">Breed</th>    
+                    <th scope="col">Service</th>
+                </tr>
+            </thead>
+            <tbody id="petsTbl">
                 <!-- add the pets-->
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
             </tbody>
         </table>
     </main>

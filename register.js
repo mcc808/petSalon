@@ -44,14 +44,14 @@ function isValid(newPet){
 function register(){
     //create obj
     let thePet = new Pet(inputName.value,inputAge.value,inputGender.value,inputBreed.value,selectService.value);
-    //if(isValid(thePet)==true){
+    if(isValid(thePet)==true){
     //push the pet into the array
     petSalon.pets.push(thePet);
-    displayPetCards();
-    //displayPetTable();
-    //}else{
-        //alert("Please enter a service");
-    //}
+    //displayPetCards();
+    displayPetTable();
+    }else{
+        alert("Please enter a service");
+    }
     //clear fields
     clearInputs();
     displayNumberOfPets(); 
@@ -89,8 +89,8 @@ function init(){
     //push the pet into the array
     petSalon.pets.push(scooby,bella);
     displayNumberOfPets();
-    displayPetCards();
-    //displayPetTable();
+    //displayPetCards();
+    displayPetTable();
 }
 
 window.onload = init;
