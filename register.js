@@ -79,7 +79,7 @@ function deletePet(petID){
             console.log("The deleted pet is in the position" + deleteIndex);
         }
     }
-    document.getElementById(petID);
+    document.getElementById(petID).remove();
 }
 
 function init(){
