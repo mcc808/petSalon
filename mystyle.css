@@ -9,6 +9,21 @@
     border: 1px solid #b8b8b8;
     padding: 8px;
 }
-.container{
+body{
     background-color: rgb(124, 238, 228); 
+}
+.containerHome{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    max-width: 100%;
+}
+.image{
+    flex-basis: 40%;
+}
+.text{
+    font-size: 20px;
+    padding-left: 20px;
 }
